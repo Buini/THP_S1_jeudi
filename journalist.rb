@@ -26,6 +26,16 @@ nb_handle_aude = tableau.select {|item| item.include?('Aude') || item.include?('
 puts nb_handle_aude.length
   end
 
+# ordonne le tableau par ordre alphabetique sans tenir compte la casse ( il traite les infos comme si tout est en minuscule)
+
+def ordrealpha (tableau)
+
+puts "Voici la liste des handles des journalistes, classée par ordre alphabétique:"
+puts tableau.sort_by { |x| x.downcase }
+
+end
+
 number_journalists(journalistes)
 number_handles_numero(journalistes)
 number_handles_aude(journalistes)
+ordrealpha(journalistes)
