@@ -27,6 +27,13 @@ nb_handle_aude = tableau.select {|item| item.include?('Aude') || item.include?('
 # on retourne le nombre d'elements inclus dans ce tableau
 puts nb_handle_aude.length
 end
+#on cherche le nombre d'underscore
+def underscore(tableau)
+puts "Combien y-a-t-il d'underscore?"
+
+tableau_underscore=tableau.select{|item| item.include?('_')}
+puts tableau_underscore.size
+end
 
 # ordonne le tableau par ordre alphabetique sans tenir compte la casse ( il traite les infos comme si tout est en minuscule)
 
@@ -37,10 +44,10 @@ puts tableau.sort_by { |x| x.downcase }
 
 end
 
-
 # appels aux méthodes
 
 number_journalists(journalistes)
 number_handles_numero(journalistes)
 number_handles_aude(journalistes)
+underscore(journalistes)
 ordrealpha(journalistes)
