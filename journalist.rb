@@ -36,6 +36,8 @@ puts "Voici la liste des handles des journalistes, classée par ordre alphabéti
 puts tableau.sort_by { |x| x.downcase }
 
 end
+
+
 # appels aux méthodes
 
 number_journalists(journalistes)
