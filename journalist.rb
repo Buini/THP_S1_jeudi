@@ -9,7 +9,6 @@ end
 
 def number_handles_numero(tableau)
 
-
 puts "Combien d'handles contiennent un numéro ?"
 nb_handle_numero = tableau.select { |item|
   item.include?('0') || item.include?('1') || item.include?('2') || item.include?('3') || item.include?('4') || item.include?('5') || item.include?('6') || item.include?('7') || item.include?('8') || item.include?('9')}
