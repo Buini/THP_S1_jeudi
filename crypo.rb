@@ -9,3 +9,46 @@ def hash_array
 end
 
 print hash_array
+
+#ca marche pas et il est 23H55...J'ai voulu mettre les valeurs en flottante et fuisionner les arrays.
+
+=begin
+piste de recherches qu'on a pas pu tester :
+
+question 1:
+print Quelle est la plus grande valeur
+
+faire une methode qui passe en boucle les valeurs:
+hash.key(hash.values.max)
+
+et qui print le résultat
+
+question 2
+
+print"quelle est la plus petite valeur?"
+idem que avant sauf
+hash.key(hash.values.min)
+
+question 3: 
+
+print:  "Quelles monnaies contiennent le mot "coin"? 
+s'inspirer de la question aude des journaliste 
+et l'appliquer aux carractères "coin" qui est une aussi suite de carractère. prendre le tableau (array) key comme variables
+
+question 4:
+
+print "quelles sont les valeurs inférieures à 6000?"
+	faire une methode :
+
+	def valeur_min (values)
+
+	 valeur_min_6000==values <6000 
+
+	end
+
+print key qui correspondent à valeur_min_6000 
+question 5
+ 	hash.key(hash de valeur_min_6000.min)
+	print  son nom
+
+end
