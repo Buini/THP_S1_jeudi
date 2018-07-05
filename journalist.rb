@@ -19,13 +19,19 @@ end
 def number_handles_aude(tableau)
 puts "Combien d'handles contiennent 'Aude' ?"
 
-# on cree un nouveau tableau comprenant les handles qui contiennent la suite de caracteres "aude"
+# on cree un nouveau tableau.
+# Ce tableau contient le résultat de la méthode select,
+# methode qui va parcourir le premier tableau et ne retenir que les elements comprenant Aude ou aude
 nb_handle_aude = tableau.select {|item| item.include?('Aude') || item.include?('aude')}
 
 # on retourne le nombre d'elements inclus dans ce tableau
 puts nb_handle_aude.length
-  end
+end
 
+
+
+
+# appels aux méthodes
 number_journalists(journalistes)
 number_handles_numero(journalistes)
 number_handles_aude(journalistes)
