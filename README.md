@@ -1,5 +1,6 @@
-# thp-s1-google
-Maxime : ajout section central
-Manon : ajout header
-Jean-Emmanuel : ajout footer
-lien : thp-s1-mardi-tofu.surge.sh
+# thp-s1-jeudi
+Maxime  
+Manon 
+Jean-Emmanuel  
+
+Nous n'avons pas fini les exercices de cryptomonaie, malgès une présence et une concentration collective de 9h à 22h20.
