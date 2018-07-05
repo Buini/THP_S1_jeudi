@@ -35,11 +35,11 @@ puts tableau.sort_by { |x| x.downcase }
 
 end
 #compte le nombre de "_" dans l'ensemble du tableau
+
 def combien_underscore(tableau)
 	
 puts "Combien y-a-il de "_" dans le tableau?"
-tableau.map.counts
-puts tableau.each { |_| counts[_] += 1 }
+puts  "il y a" tableau.map.count('_')"underscores dans la liste."
 
 end
 # appels aux méthodes
