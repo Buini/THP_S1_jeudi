@@ -48,9 +48,3 @@ number_journalists(journalistes)
 number_handles_numero(journalistes)
 number_handles_aude(journalistes)
 ordrealpha(journalistes)
-
-<<<<<<< HEAD
-# on retourne le nombre d'elements inclus dans le tableau
-puts nb_handle_aude.length
-=======
->>>>>>> e5b0763b47d847ce7ef45ce720ade0f8f5b19f22
