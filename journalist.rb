@@ -27,6 +27,24 @@ nb_handle_aude = tableau.select {|item| item.include?('Aude') || item.include?('
 # on retourne le nombre d'elements inclus dans ce tableau
 puts nb_handle_aude.length
 end
+
+def nb_handles_uppercase(tableau)
+  puts "Combien de handles contiennent une majuscule ?"
+  # item.match(/[[:upper:]]) capture les éléments contenant une majuscule
+  nb_handle_uppercase = tableau.select {|item| item.match(/[[:upper:]]/)}
+
+  puts nb_handle_uppercase.length
+end
+
+def nb_handles_first_uppercase(tableau)
+  puts "Combien de handles commencent par une majuscule ?"
+
+  nb_handle_first_uppercase = tableau.map {|item| item.slice(1)}
+  nb_handle_first_uppercase = nb_handle_first_uppercase.select {|item| item.match(/[[:upper:]]/)}
+  puts nb_handle_first_uppercase.length
+
+end
+
 #on cherche le nombre d'underscore
 def underscore(tableau)
 puts "Combien y-a-t-il d'underscore?"
@@ -49,5 +67,7 @@ end
 number_journalists(journalistes)
 number_handles_numero(journalistes)
 number_handles_aude(journalistes)
+nb_handles_uppercase(journalistes)
+nb_handles_first_uppercase(journalistes)
 underscore(journalistes)
 ordrealpha(journalistes)
